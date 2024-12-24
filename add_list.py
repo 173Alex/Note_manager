@@ -10,9 +10,8 @@ for i in range(3):
     title = input(f"Введите заголовок {i + 1} заметки: ")
     titles.append(title)
 
-print()
 # Выводим введённые данные
-print("Вами были введены следующие данные:")
+print("\nВами были введены следующие данные:")
 print("Имя пользователя:", username)
 print("Заголовки заметок:", titles)
 print("Описание заметки:", content)
@@ -20,10 +19,9 @@ print("Статус заметки:", status)
 print("Дата создания заметки:", create_date)
 print("Дата истечения заметки:", issue_date)
 
-print()
 # Представление даты при выводе для пользователя
-temp_create_date = create_date[:6]
-temp_issue_date = issue_date[:6]
-print("Представление даты при выводе для пользователя:")
+temp_create_date = create_date[:5]
+temp_issue_date = issue_date[:5]
+print("\nПредставление даты при выводе для пользователя:")
 print("Дата создания заметки:", temp_create_date)
 print("Дата истечения заметки:", temp_issue_date)
